@@ -1,20 +1,25 @@
 <section class="spaced">
   <h3>
     <!-- CHARACTER NAME -->
+    {{character.name}}
   </h3>
   <aside>
-    <img />
+    <img [src]="character.imagePath" [alt]="character.name"/>
   </aside>
   <div>
     <dl>
       <dt>Title</dt>
       <dd>
         <!-- CHARACTER TITLE -->
+        {{character.title}}
       </dd>
+      <div *ngIf="(character.aliases.length >0)">
       <dt>Aliases</dt>
       <dd>
         <!-- CHARACTER ALIASES IN A SINGLE STRING, SEPARATED BY COMAS -->
+        {{character.aliases.join(", ")}}
       </dd>
+    </div>
     </dl>
   </div>
 </section>

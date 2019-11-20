@@ -8,7 +8,5 @@ import { Character } from '../Character';
 })
 export class CharacterCardComponent {
   @Input() public character!: Character;
-  public constructor() {}
-
-  public ngOnInit(): void {}
+  
 }

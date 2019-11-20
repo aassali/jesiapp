@@ -4,7 +4,7 @@
 
 <main class="padded spaced">
   <aside>
-    <img />
+    <img [src]="house.imagePath" [alt]="house.coatOfArms"/>
   </aside>
   <div>
     <h2>
@@ -34,6 +34,6 @@
 
 <section *ngIf="characters">
   <!-- CHARACTERS GO HERE -->
-  <jesi-character-card *ngFor="let character of characters" [character]="char">
+  <jesi-character-card *ngFor="let character of characters" [character]="character">
     </jesi-character-card>
 </section>
