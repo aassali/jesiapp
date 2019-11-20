@@ -9,18 +9,24 @@
   <div>
     <h2>
       <!-- HOUSE NAME -->
+      {{ house.name }}
     </h2>
     <h3>
       <!-- HOUSE REGION - HOUSE SEAT -->
+      {{ house.region }} - {{house.seat}}
     </h3>
     <dl>
+      <div *ngIf="(house.words)">
       <dt>Words</dt>
       <dd>
         <!-- HOUSE WORDS -->
+        {{house.words}}
       </dd>
+      </div>
       <dt>Coat of arms</dt>
       <dd>
         <!-- HOUSE COAT OF ARMS -->
+        {{house.coatOfArms}}
       </dd>
     </dl>
   </div>
